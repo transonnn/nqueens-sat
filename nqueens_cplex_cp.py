@@ -28,7 +28,11 @@ def solve_nqueens(n):
         queens[r] - r for r in range(n)
     ]))
 
-    solution = model.solve(execfile=CP_OPTIMIZER_PATH)
+    solution = model.solve(
+        execfile=CP_OPTIMIZER_PATH,
+        Workers=1,
+        LogVerbosity="Quiet"
+    )
 
     if solution is None:
         return None
