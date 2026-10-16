@@ -1,9 +1,9 @@
+
 import csv
 import statistics
 from collections import defaultdict
 
 import matplotlib.pyplot as plt
-
 
 INPUT_FILE = "benchmark_5solvers.csv"
 OUTPUT_IMAGE = "benchmark_5solvers.png"
@@ -41,14 +41,13 @@ if not data:
 sizes = sorted({n for n, _ in data})
 summary_rows = []
 
-plt.figure(figsize=(10, 6))
+fig, ax = plt.subplots(figsize=(10, 6))
 
 for solver in solver_order:
+    solver_sizes = []
     medians = []
     lower_errors = []
     upper_errors = []
-
-    solver_sizes = []
 
     for n in sizes:
         times = data.get((n, solver), [])
@@ -57,25 +56,23 @@ for solver in solver_order:
             continue
 
         median = statistics.median(times)
-        minimum = min(times)
-        maximum = max(times)
 
         solver_sizes.append(n)
         medians.append(median)
-        lower_errors.append(median - minimum)
-        upper_errors.append(maximum - median)
+        lower_errors.append(median - min(times))
+        upper_errors.append(max(times) - median)
 
         summary_rows.append({
             "n": n,
             "solver": solver,
             "successful_runs": len(times),
             "median_seconds": f"{median:.9f}",
-            "min_seconds": f"{minimum:.9f}",
-            "max_seconds": f"{maximum:.9f}",
+            "min_seconds": f"{min(times):.9f}",
+            "max_seconds": f"{max(times):.9f}",
         })
 
     if solver_sizes:
-        plt.errorbar(
+        ax.errorbar(
             solver_sizes,
             medians,
             yerr=[lower_errors, upper_errors],
@@ -84,16 +81,16 @@ for solver in solver_order:
             label=solver,
         )
 
-plt.yscale("log")
-plt.xlabel("Board size N")
-plt.ylabel("End-to-end runtime (seconds, log scale)")
-plt.title("N-Queens: Comparison of Five Solvers")
-plt.xticks(sizes)
-plt.grid(True, which="both", linestyle="--", alpha=0.35)
-plt.legend()
-plt.tight_layout()
-plt.savefig(OUTPUT_IMAGE, dpi=200)
-plt.close()
+ax.set_yscale("log")
+ax.set_xlabel("Board size N")
+ax.set_ylabel("End-to-end runtime (seconds, log scale)")
+ax.set_title("N-Queens: Comparison of Five Solvers")
+ax.set_xticks(sizes)
+ax.grid(True, which="both", linestyle="--", alpha=0.35)
+ax.legend()
+fig.tight_layout()
+fig.savefig(OUTPUT_IMAGE, dpi=200)
+plt.close(fig)
 
 with open(
     OUTPUT_SUMMARY, "w", newline="", encoding="utf-8-sig"
