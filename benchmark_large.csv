@@ -1,0 +1,61 @@
+﻿python_version,operating_system,n,solver,repetition,time_seconds,status,solution_valid,error
+3.13.16,Windows-11-10.0.26200-SP0,32,SAT,1,0.076269600,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,32,CP-SAT,1,11.852141000,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,32,CPLEX MIP,1,0.686606200,ERROR,False,CplexSolverError: CPLEX Error  1016: Community Edition. Problem size limits exceeded. Purchase at http://ibm.biz/error1016.
+3.13.16,Windows-11-10.0.26200-SP0,32,Gurobi,1,1.531043000,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,32,CPLEX CP,1,0.055450600,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,32,CP-SAT,2,0.138306300,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,32,CPLEX MIP,2,0.012961800,ERROR,False,CplexSolverError: CPLEX Error  1016: Community Edition. Problem size limits exceeded. Purchase at http://ibm.biz/error1016.
+3.13.16,Windows-11-10.0.26200-SP0,32,Gurobi,2,0.069319000,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,32,CPLEX CP,2,0.045213000,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,32,SAT,2,0.098679000,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,32,CPLEX MIP,3,0.018454500,ERROR,False,CplexSolverError: CPLEX Error  1016: Community Edition. Problem size limits exceeded. Purchase at http://ibm.biz/error1016.
+3.13.16,Windows-11-10.0.26200-SP0,32,Gurobi,3,0.065479200,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,32,CPLEX CP,3,0.036975600,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,32,SAT,3,0.087298200,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,32,CP-SAT,3,0.117652200,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,40,SAT,1,0.170675600,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,40,CP-SAT,1,0.155221700,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,40,CPLEX MIP,1,0.026789600,ERROR,False,CplexSolverError: CPLEX Error  1016: Community Edition. Problem size limits exceeded. Purchase at http://ibm.biz/error1016.
+3.13.16,Windows-11-10.0.26200-SP0,40,Gurobi,1,0.117058700,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,40,CPLEX CP,1,0.057697400,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,40,CP-SAT,2,0.204108700,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,40,CPLEX MIP,2,0.029364100,ERROR,False,CplexSolverError: CPLEX Error  1016: Community Edition. Problem size limits exceeded. Purchase at http://ibm.biz/error1016.
+3.13.16,Windows-11-10.0.26200-SP0,40,Gurobi,2,0.093883400,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,40,CPLEX CP,2,0.048690200,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,40,SAT,2,0.167927400,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,40,CPLEX MIP,3,0.018987700,ERROR,False,CplexSolverError: CPLEX Error  1016: Community Edition. Problem size limits exceeded. Purchase at http://ibm.biz/error1016.
+3.13.16,Windows-11-10.0.26200-SP0,40,Gurobi,3,0.070773200,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,40,CPLEX CP,3,0.035545800,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,40,SAT,3,0.164509200,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,40,CP-SAT,3,0.158442800,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,48,SAT,1,0.278581000,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,48,CP-SAT,1,0.252909700,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,48,CPLEX MIP,1,0.026907200,ERROR,False,CplexSolverError: CPLEX Error  1016: Community Edition. Problem size limits exceeded. Purchase at http://ibm.biz/error1016.
+3.13.16,Windows-11-10.0.26200-SP0,48,Gurobi,1,0.051680000,ERROR,False,GurobiError: Model too large for size-limited license; visit https://gurobi.com/unrestricted for more information
+3.13.16,Windows-11-10.0.26200-SP0,48,CPLEX CP,1,0.029474300,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,48,CP-SAT,2,0.206320600,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,48,CPLEX MIP,2,0.031781000,ERROR,False,CplexSolverError: CPLEX Error  1016: Community Edition. Problem size limits exceeded. Purchase at http://ibm.biz/error1016.
+3.13.16,Windows-11-10.0.26200-SP0,48,Gurobi,2,0.051482100,ERROR,False,GurobiError: Model too large for size-limited license; visit https://gurobi.com/unrestricted for more information
+3.13.16,Windows-11-10.0.26200-SP0,48,CPLEX CP,2,0.044728200,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,48,SAT,2,0.233348100,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,48,CPLEX MIP,3,0.032007100,ERROR,False,CplexSolverError: CPLEX Error  1016: Community Edition. Problem size limits exceeded. Purchase at http://ibm.biz/error1016.
+3.13.16,Windows-11-10.0.26200-SP0,48,Gurobi,3,0.046623600,ERROR,False,GurobiError: Model too large for size-limited license; visit https://gurobi.com/unrestricted for more information
+3.13.16,Windows-11-10.0.26200-SP0,48,CPLEX CP,3,0.028985000,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,48,SAT,3,0.185905800,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,48,CP-SAT,3,0.178801200,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,64,SAT,1,0.424595400,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,64,CP-SAT,1,0.361831100,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,64,CPLEX MIP,1,0.046927900,ERROR,False,CplexSolverError: CPLEX Error  1016: Community Edition. Problem size limits exceeded. Purchase at http://ibm.biz/error1016.
+3.13.16,Windows-11-10.0.26200-SP0,64,Gurobi,1,0.070688400,ERROR,False,GurobiError: Model too large for size-limited license; visit https://gurobi.com/unrestricted for more information
+3.13.16,Windows-11-10.0.26200-SP0,64,CPLEX CP,1,0.028873200,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,64,CP-SAT,2,0.368623200,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,64,CPLEX MIP,2,0.041809500,ERROR,False,CplexSolverError: CPLEX Error  1016: Community Edition. Problem size limits exceeded. Purchase at http://ibm.biz/error1016.
+3.13.16,Windows-11-10.0.26200-SP0,64,Gurobi,2,0.063551600,ERROR,False,GurobiError: Model too large for size-limited license; visit https://gurobi.com/unrestricted for more information
+3.13.16,Windows-11-10.0.26200-SP0,64,CPLEX CP,2,0.024436800,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,64,SAT,2,0.410035100,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,64,CPLEX MIP,3,0.044097000,ERROR,False,CplexSolverError: CPLEX Error  1016: Community Edition. Problem size limits exceeded. Purchase at http://ibm.biz/error1016.
+3.13.16,Windows-11-10.0.26200-SP0,64,Gurobi,3,0.067611900,ERROR,False,GurobiError: Model too large for size-limited license; visit https://gurobi.com/unrestricted for more information
+3.13.16,Windows-11-10.0.26200-SP0,64,CPLEX CP,3,0.024530100,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,64,SAT,3,0.416340800,OK,True,
+3.13.16,Windows-11-10.0.26200-SP0,64,CP-SAT,3,0.369754000,OK,True,
