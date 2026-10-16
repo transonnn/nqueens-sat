@@ -1,5 +1,6 @@
 import sys
 import time
+from xml.parsers.expat import model
 from ortools.sat.python import cp_model
 
 
@@ -41,6 +42,7 @@ def solve_nqueens(n):
             model.AddAtMostOne(diagonal)
 
     solver = cp_model.CpSolver()
+    solver.parameters.num_search_workers = 1
     status = solver.Solve(model)
 
     if status == cp_model.INFEASIBLE:
